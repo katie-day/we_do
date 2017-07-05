@@ -1,0 +1,55 @@
+.no-touch .background {
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+.touch .background,
+.background {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: url('./images/floral.jpg') center center repeat; 
+}
+
+    .no-touch .background__scene {
+        height: 100%;
+        width: 100%;
+        transform: translate3d(0px, 0px, 0px);
+        will-change: transform;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+    }
+
+    .no-touch .background__image {
+        position: absolute;
+        background: url('./images/floral.jpg') center center repeat;
+        top: -9930px;
+        right: -9999px;
+        bottom: 0;
+        margin: auto;
+        left: -9930px;
+        z-index: 0;
+        opacity: 1;
+        // transition: .5s;
+        // transform: translate(14%, 8%);
+        // width: 81%;
+    }

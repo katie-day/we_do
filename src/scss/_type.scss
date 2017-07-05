@@ -1,0 +1,41 @@
+// Typography 
+
+h1,
+.h1 {
+    font-family: $font-floxglow;
+    font-size: 140px;
+    font-weight: 500;
+    line-height: .625;
+
+    @include small {
+        font-size: 180px;
+    }
+
+    @include medium {
+        font-size: 200px;
+    }
+
+    @include large {
+        font-size: 240px;
+    }
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.text-group {
+    text-align: center;
+}
+
+.text-body {
+    text-transform: uppercase;
+}
+
+.text-serif {
+    font-family: $font-floxglow;
+    text-transform: none;
+    font-size: 4em;
+    line-height: .75;
+}

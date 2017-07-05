@@ -1,0 +1,47 @@
+html, 
+body,
+.u-full-height {
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    line-height: 1.25;
+}
+
+body {
+    color: $color-white;
+    font-family: $font-mons;
+    font-size: 16px;
+}
+
+.main {
+    position: relative;
+    min-height: 100%;
+}
+
+// .background {}
+
+// .foreground {
+//     position: relative;
+//     z-index: 100;
+//     // height: 100%;
+// }
+
+//     .foreground__content {
+//         text-align: center;
+//     }
+
+    // .foreground__content {
+    //     min-height: 100%;
+    //     background-color: $color-plum;
+    //     position: relative;
+    // }
+
+    // .foreground__inner {
+    //     height: 100%;
+    //     padding: 24px;
+    // }

@@ -1,0 +1,65 @@
+// ----------------------------------------------------------------------------
+// Breakpoints and simple media query mixins
+// ----------------------------------------------------------------------------
+
+$breakpoint-xs: 600px;
+$breakpoint-s: 767px;
+$breakpoint-m: $breakpoint-s + 1px;
+$breakpoint-l: 1020px;
+$breakpoint-xl: 1220px;
+$breakpoint-xxl: 1320px;
+
+@mixin xsmall {
+    @media only screen and (max-width: $breakpoint-xs - 1px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media only screen and (min-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin small-max {
+    @media only screen and (max-width: $breakpoint-s) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: $breakpoint-m) {
+        @content;
+    }
+}
+
+@mixin medium-max {
+    @media only screen and (max-width: $breakpoint-l - 1px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: $breakpoint-l) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media only screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin xxlarge {
+    @media only screen and (min-width: $breakpoint-xxl) {
+        @content;
+    }
+}
+
+// Custom break points
+@mixin custom-breakpoint($width) {
+    @media only screen and (min-width: #{$width}px) {
+        @content;
+    }
+}
