@@ -34,6 +34,6 @@ jobs:
               aws configure set default.output json;
               aws configure set preview.cloudfront true;
               aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /*;
-              aws  s3 cp --recursive . s3://bookarate-prod-s3-01-s3bucket-1374njiid15d/;
+              aws  s3 cp --recursive . s3://we-prod-s3-01-s3bucket-zbmttly3is2w/;
               exit $?
             fi
