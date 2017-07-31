@@ -6,14 +6,20 @@ import AddToCalendar from 'react-add-to-calendar';
 const SaveTheDate = () => {
     return (
         <div className="main" role="main">
-            <ReactCursorPosition>
+            {window.IsTouch ? (
                 <Scene />
-            </ReactCursorPosition>
+            ) : (
+                <ReactCursorPosition>
+                    <Scene />
+                </ReactCursorPosition>
+            )}
+            
         </div>
     );
 };
 
 const Scene = (props) => {
+    console.log('props: ', props);
     const {
         position: {
         x = 0,
@@ -21,8 +27,8 @@ const Scene = (props) => {
         } = {}
     } = props;
 
-    const xOffset = x * 0.03;
-    const yOffset = y * 0.03;
+    const xOffset = x ? x * 0.03 : 0;
+    const yOffset = y ? y * 0.03 : 0;
 
     let backgroundStyle = {
         transform: 'translate(0,0)',
@@ -50,6 +56,11 @@ const Scene = (props) => {
         endTime: '2018-05-12T23:00:00+12:00'
     };
 
+    const items = [
+        { apple: 'Apple' },
+        { google: 'Google' }
+    ];
+
     return (
         <div>
             <div className="background">
@@ -64,11 +75,15 @@ const Scene = (props) => {
                     </div>
                     <div className="text-group">
                         <h3 className="text-body">Dale & Katie</h3>
-                        <p className="text-body">Saturday 12 May 2018</p>
-                        <p className="text-body">Kumeu Valley Estate, Auckland.</p>
+                        <p className="text-body">Saturday 12 May 2018<br/>
+                        Kumeu Valley Estate, Auckland.</p>
                     </div>
                     <div className="btn-group">
-                        <AddToCalendar event={event} buttonLabel="Save to"/>
+                        <AddToCalendar 
+                            event={event} 
+                            buttonLabel="Add to your calendar"
+                            listItems={items}
+                            />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,9 @@
 .btn-group {
     margin-top: 42px;
     text-align: center;
+    padding-bottom: 44px;
+
+    @include small {
+        padding-bottom: 1px;
+    }
 }
