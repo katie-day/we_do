@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: springload/cici:2017.03.29
+        entrypoint: "/bin/bash"
+        environment:
+          - APPLICATION: katie-day/we_do
+    working_directory: '~/we_do'
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          working_directory: /
+          command: |
+            apt-get update
+            apt-get -y install curl
+            apt-get -y install awscli
+      - run:
+          name: nvm and npm install
+          command: >-
+            flock -x ~/we_do/package.json -c '/bin/bash -lcie "pyenv shell 2.7.12 && cd ~/we_do && nvm install && npm install && npm run dist"';
+
+      - deploy:
+          name: Deploy production
+          shell: /bin/bash -lcie
+          region: ap-southeast-2
+          command: >-
+            if [ "${CIRCLE_BRANCH}" == "deploy/production" ]; then
+              cd ~/we_do/build &&
+              aws configure set default.region ap-southeast-2;
+              aws configure set default.output json;
+              aws configure set preview.cloudfront true;
+              aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /*;
+              aws  s3 cp --recursive . s3://bookarate-prod-s3-01-s3bucket-1374njiid15d/;
+              exit $?
+            fi
