@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#270923">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>Dale and Katie are getting married</title>
-    <meta name="description" content="Join us to celebrate our wedding day on Saturday 12 May 2018. Woohoo!">
-    <meta property="og:url" content="http://www.daleandkatie.co.nz/"> 
+    <meta name="description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!">
+    <meta property="og:url" content="https://daleandkatie.co.nz"> 
      <meta property="og:site_name" content="Dale and Katie"> 
-     <meta property="og:description" content="Join us to celebrate our wedding day on Saturday 12 May 2018. Woohoo!"> 
+     <meta property="og:description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!"> 
      <meta property="og:title" content="Dale and Katie are getting married!"> 
      <meta property="og:image" content="%PUBLIC_URL%/share.png">
   </head>
@@ -25,13 +25,37 @@
 <![endif]-->
 
 <!--[if IE]>
-    <div class="section-stacked-bottom section--push t-yellow t-yellow--bg">
+    <div class="">
         <div class="gutters">
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser or Internet Explorer. You should use Chrome, <a class="link" href="https://www.google.com/chrome/browser/desktop/index.html">download it here</a> to improve your experience.</p>
+            <p class="browserupgrade">No way! You are using an <strong>outdated</strong> browser or Internet Explorer. You should use Chrome, <a class="link" href="https://www.google.com/chrome/browser/desktop/index.html">download it here</a> to improve your experience.</p>
         </div>
     </div>
 <![endif]-->
     <div id="root" class="u-full-height"></div>
+    <!-- 
+
+<div itemscope itemtype="http://schema.org/SocialEvent">
+     	<meta itemprop="description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!">
+        <meta itemprop="startDate" content="2018-05-12T15:30">
+        <meta itemprop="endDate" content="2018-05-12T23:00">
+        <meta itemprop="duration" content="0000-00-00T07:30">
+        <link itemprop="url" href="http://daleandkatie.co.nz" rel="author"/>
+        <a itemprop="url" href="http://daleandkatie.co.nz"><span itemprop="name" style="display:block;"><strong>Dale and Katie </strong></span></a>
+        <div itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Kumeu Valley Estate, Auckland</span>
+        </div>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			    <span itemprop="streetAddress" style="display:block;">972 Old North Rd</span>
+			    <div>
+				<span itemprop="addressLocality" style="display:block;">Huapai</span>,
+				<span itemprop="addressRegion"style="display:block;">Waimauku</span>
+			</div>
+			<span itemprop="postalCode"style="display:block;">0882</span>
+			<span itemprop="addressCountry"style="display:block;">New Zealand</span>
+		</div>
+	</div>
+
+      -->
       <script type="application/ld+json">
         {
           "@context": "http://schema.org",
@@ -50,8 +74,8 @@
               "addressCountry": "New Zealand"
             }
           },
-          "image": "http://www.example.com/event_image/12345",
-          "description": "Dale and Katie are getting married and would love to share their wedding day with you!",
+          "image": "%PUBLIC_URL%/share.png",
+          "description": "Dale and Katie are getting married and would love to share their day with you!"
         }
     </script>
   </body>
