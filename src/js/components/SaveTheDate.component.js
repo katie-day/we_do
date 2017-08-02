@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCursorPosition from 'react-cursor-position';
 import AddToCalendar from 'react-add-to-calendar';
+import { isFacebookApp } from '../utils'
 
 
 const SaveTheDate = () => {
@@ -19,7 +20,7 @@ const SaveTheDate = () => {
 };
 
 const Scene = (props) => {
-    console.log('props: ', props);
+    // console.log('props: ', props);
     const {
         position: {
         x = 0,
@@ -27,8 +28,11 @@ const Scene = (props) => {
         } = {}
     } = props;
 
-    const xOffset = x ? x * 0.03 : 0;
-    const yOffset = y ? y * 0.03 : 0;
+    const xOffset = x ? x * 0.02 : 0;
+    const yOffset = y ? y * 0.02 : 0;
+
+    const xOffsetBac = x ? x * 0.04 : 0;
+    const yOffsetBac = y ? y * 0.04 : 0;
 
     let backgroundStyle = {
         transform: 'translate(0,0)',
@@ -44,7 +48,7 @@ const Scene = (props) => {
         }
         
         titleStyle = {
-            backgroundPosition: `${xOffset}px ${yOffset}px`
+            backgroundPosition: `${xOffsetBac}px ${yOffsetBac}px`
         }
     }
 
@@ -60,6 +64,8 @@ const Scene = (props) => {
         { apple: 'Apple' },
         { google: 'Google' }
     ];
+
+    const isFacebook = isFacebookApp();
 
     return (
         <div>
@@ -84,6 +90,11 @@ const Scene = (props) => {
                             buttonLabel="Add to your calendar"
                             listItems={items}
                             />
+                            {isFacebook && (
+                                <div className="pb">
+                                    <p className="small-text">Looks like you are using an in-app browser. To add our event to your calendar, open this website in safari or chrome!<br/>(Click the three dots in the bottom right)</p>
+                                </div>
+                            )}
                     </div>
                 </div>
             </div>
