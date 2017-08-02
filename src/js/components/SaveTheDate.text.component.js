@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../images/floral_small.jpg';
+// import image from '../../images/floral_2_small.jpg';
 
 const ClippedText = () => {
     return (
