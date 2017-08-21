@@ -33,6 +33,6 @@ jobs:
               aws configure set default.region ap-southeast-2;
               aws configure set default.output json;
               aws configure set preview.cloudfront true;
-              aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /*;
               aws  s3 cp --recursive . s3://we-prod-s3-01-s3bucket-zbmttly3is2w;
+              aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /*.* /static;              
             fi

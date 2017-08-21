@@ -1,4 +1,9 @@
 <!doctype html>
+<!--[if lte IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en-nz"> <![endif]-->
+<!--[if lte IE 8]><html class="lt-ie9 lt-ie8" lang="en-nz"> <![endif]-->
+<!--[if lte IE 9]><html class="lt-ie9" lang="en-nz"> <![endif]-->
+<!--[if IE]><html class="ie" lang="en-nz"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-nz"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,12 +11,12 @@
     <meta name="theme-color" content="#270923">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>Dale and Katie are getting married</title>
+    <title>Katie &amp; Dale </title>
     <meta name="description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!">
     <meta property="og:url" content="https://daleandkatie.co.nz"> 
      <meta property="og:site_name" content="Dale and Katie"> 
      <meta property="og:description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!"> 
-     <meta property="og:title" content="Dale and Katie are getting married!"> 
+     <meta property="og:title" content="Katie &amp; Dale "> 
      <meta property="og:image" content="%PUBLIC_URL%/share.jpg">
   </head>
   <body>
@@ -60,7 +65,7 @@
         {
           "@context": "http://schema.org",
           "@type": "Event",
-          "name": "Katie and Dale are getting married!",
+          "name": "Katie and Dale",
           "startDate": "2018-05-12T15:30:00+12:00",
           "location": {
             "@type": "Place",
@@ -74,9 +79,19 @@
               "addressCountry": "New Zealand"
             }
           },
-          "image": "%PUBLIC_URL%/share.png",
+          "image": "%PUBLIC_URL%/share.jpg",
           "description": "Dale and Katie are getting married and would love to share their day with you!"
         }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-104980200-1', 'auto');
+      ga('send', 'pageview');
+    
     </script>
   </body>
 </html>

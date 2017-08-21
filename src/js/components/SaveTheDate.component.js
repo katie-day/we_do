@@ -67,6 +67,22 @@ const Scene = (props) => {
 
     const isFacebook = isFacebookApp();
 
+    const getWindowHeight = () => {
+        const w = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+        return y;
+    }
+
+    const height = getWindowHeight() - 20;
+
+    const style = {
+        minHeight: `${height}px`, 
+    }
+
     return (
         <div>
             <div className="background">
@@ -75,7 +91,7 @@ const Scene = (props) => {
                 </div>
             </div>
             <div className="section">
-                <div className="section__inner">
+                <div className="section__inner" style={style}>
                     <div className="title" style={titleStyle}>
                         <h1 className="title__text">Save our&nbsp;date</h1>
                     </div>
@@ -84,18 +100,14 @@ const Scene = (props) => {
                         <p className="text-body">Saturday 12 May 2018<br/>
                         Kumeu Valley Estate, Auckland.</p>
                     </div>
+                    {!isFacebook && (
                     <div className="btn-group">
                         <AddToCalendar 
                             event={event} 
                             buttonLabel="Add to your calendar"
                             listItems={items}
                             />
-                            {isFacebook && (
-                                <div className="pb">
-                                    <p className="small-text">Looks like you are using an in-app browser. To add our event to your calendar, open this website in safari or chrome!<br/>(Click the three dots in the bottom right)</p>
-                                </div>
-                            )}
-                    </div>
+                    </div>)}
                 </div>
             </div>
         </div>
