@@ -16,7 +16,17 @@ function initFeatureDetection() {
     window.IsTouch = 'ontouchstart' in window;
 }
 
+export function initBackgroundClip() {
+    const docStyles = document.documentElement.style;
+    const hasBackgroundClip = 'webkitBackgroundClip' in docStyles; 
+    // || 'WebkitFlexWrap' in docStyles || 'msFlexWrap' in docStyles;
+    document.documentElement.className += hasBackgroundClip ? ' backgroundclip' : ' no-backgroundclip';
+}
+
+// webkitBackgroundClip
+
 initFeatureDetection();
+initBackgroundClip();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();

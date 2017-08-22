@@ -13,11 +13,16 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>Katie &amp; Dale </title>
     <meta name="description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!">
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daleandkatie.co.nz"> 
      <meta property="og:site_name" content="Dale and Katie"> 
      <meta property="og:description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!"> 
      <meta property="og:title" content="Katie &amp; Dale "> 
      <meta property="og:image" content="%PUBLIC_URL%/share.jpg">
+     <meta property="og:image:type" content="image/jpeg" />
+     <meta property="og:image:width" content="1200" />
+     <meta property="og:image:height" content="630" />
+     <meta property="og:image:alt" content="Join us to celebrate our wedding on Saturday 12 May 2018" />
   </head>
   <body>
     <noscript>
@@ -30,43 +35,19 @@
 <![endif]-->
 
 <!--[if IE]>
-    <div class="">
-        <div class="gutters">
-            <p class="browserupgrade">No way! You are using an <strong>outdated</strong> browser or Internet Explorer. You should use Chrome, <a class="link" href="https://www.google.com/chrome/browser/desktop/index.html">download it here</a> to improve your experience.</p>
-        </div>
-    </div>
+      <div style="position: absolute; top:0; left:0; width:100%; z-index: 300;">
+          <p class="browserupgrade" style="padding: 40px; color: #ffffff">No way! You are using an <strong>outdated browser</strong> or Internet Explorer. You should use Chrome, <a style="color: #f9d3c6; text-decoration: underline;" href="https://www.google.com/chrome/browser/desktop/index.html">download it here</a> to improve your experience.</p>
+      </div>
 <![endif]-->
     <div id="root" class="u-full-height"></div>
-    <!-- 
 
-<div itemscope itemtype="http://schema.org/SocialEvent">
-     	<meta itemprop="description" content="Join us to celebrate our wedding on Saturday 12 May 2018. Woohoo!">
-        <meta itemprop="startDate" content="2018-05-12T15:30">
-        <meta itemprop="endDate" content="2018-05-12T23:00">
-        <meta itemprop="duration" content="0000-00-00T07:30">
-        <link itemprop="url" href="http://daleandkatie.co.nz" rel="author"/>
-        <a itemprop="url" href="http://daleandkatie.co.nz"><span itemprop="name" style="display:block;"><strong>Dale and Katie </strong></span></a>
-        <div itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Kumeu Valley Estate, Auckland</span>
-        </div>
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			    <span itemprop="streetAddress" style="display:block;">972 Old North Rd</span>
-			    <div>
-				<span itemprop="addressLocality" style="display:block;">Huapai</span>,
-				<span itemprop="addressRegion"style="display:block;">Waimauku</span>
-			</div>
-			<span itemprop="postalCode"style="display:block;">0882</span>
-			<span itemprop="addressCountry"style="display:block;">New Zealand</span>
-		</div>
-	</div>
-
-      -->
       <script type="application/ld+json">
         {
           "@context": "http://schema.org",
           "@type": "Event",
           "name": "Katie and Dale",
           "startDate": "2018-05-12T15:30:00+12:00",
+          "endDate": "2018-05-12T23:00:00+12:00",
           "location": {
             "@type": "Place",
             "name": "Kumeu Valley Estate",
@@ -79,7 +60,7 @@
               "addressCountry": "New Zealand"
             }
           },
-          "image": "%PUBLIC_URL%/share.jpg",
+          "image": "https://daleandkatie.co.nz/share.jpg",
           "description": "Dale and Katie are getting married and would love to share their day with you!"
         }
     </script>
