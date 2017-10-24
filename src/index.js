@@ -1,32 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { Router, Route, browserHistory } from 'react-router';
+// import 'whatwg-fetch';
 // import addToCalendar from 'addtocalendar/addtocalendar'
 
-import App from './js/App';
+import store from './js/store/configureStore';
+import App from './js/App.container';
+
+import Thanks from './js/components/common/Thanks.component';
+import Errors from './js/components/common/Errors.component';
+import PageNotFound from './js/components/common/PageNotFound.component';
+
+import { tabFocus, initFlexboxSupport, initFeatureDetection } from './js/utils'
 // import registerServiceWorker from './registerServiceWorker';
 import 'normalize.css';
 import './App.css';
 
-
-
-function initFeatureDetection() {
-    const touchClass = 'ontouchstart' in window ? 'touch' : 'no-touch';
-    document.documentElement.className = `${document.documentElement.className} ${touchClass}`;
-
-    window.IsTouch = 'ontouchstart' in window;
-}
-
-export function initBackgroundClip() {
-    const docStyles = document.documentElement.style;
-    const hasBackgroundClip = 'webkitBackgroundClip' in docStyles; 
-    // || 'WebkitFlexWrap' in docStyles || 'msFlexWrap' in docStyles;
-    document.documentElement.className += hasBackgroundClip ? ' backgroundclip' : ' no-backgroundclip';
-}
-
-// webkitBackgroundClip
-
 initFeatureDetection();
-initBackgroundClip();
+initFlexboxSupport();
+tabFocus();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const mount = document.querySelector('root');
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Router history={browserHistory}>
+            <Route path="/" component={App} />
+            <Route path="/:guest" component={App} />
+            <Route path="/thanks" component={Thanks} />
+            <Route path="/error" component={Errors} />
+            <Route path="*" component={PageNotFound} />
+        </Router>
+    </Provider>, mount);
+
 // registerServiceWorker();
