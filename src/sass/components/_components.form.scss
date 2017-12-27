@@ -1,0 +1,42 @@
+// Form
+
+.form {
+   text-align:left;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: $spacing-xxs;
+}
+
+.form__field {
+    margin-bottom: $spacing-s; 
+}
+
+.label--error {
+    .input {
+        border-color: $color-orange;
+    }
+}
+
+.form__error {
+    padding-top: 4px;
+    font-size: 13px;
+    color: $color-orange;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid $color-navy;
+    padding: 10px 10px 8px;
+    border-radius: 2px; 
+
+    &:focus {
+        box-shadow: 1px 1px 1px #e2e2e2;
+    }
+}
+
+.radio,
+.checkbox {
+    margin-bottom: 8px;
+}

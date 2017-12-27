@@ -1,0 +1,60 @@
+.react-add-to-calendar {
+    display: inline-block;
+    position: relative;
+
+    @include hover {
+        .react-add-to-calendar__dropdown {
+            border-color: $color-blurple;
+        }
+        .react-add-to-calendar__button {
+            background-color: $color-blurple;
+        }
+    }
+}
+
+.react-add-to-calendar__button {
+    @include btn;
+    z-index: 4;
+}
+
+.react-add-to-calendar__dropdown {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid $color-blurple;
+    border-top: none;
+    padding: $spacing-xs  0; 
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    position: absolute;
+    background-color: $color-white;
+    z-index: 4;
+    font-size: rem(18);
+
+    a {
+        border-bottom: none;
+        text-transform: uppercase;
+        // color: $color-pink;
+        padding: 8px 0px;
+        margin: 0;
+        // transition: color .2s, background .2s;
+        display: block;
+        text-decoration: none;
+
+        transition: color .2s;
+
+        @include hover {
+            color: $color-blurple;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: block;
+    }
+}
+

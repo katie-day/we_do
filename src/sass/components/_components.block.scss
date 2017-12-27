@@ -1,0 +1,9 @@
+// block
+
+.block-padded {
+    padding: $spacing $spacing-l $spacing-l;
+
+    @include medium {
+        padding: $spacing-l $spacing-xl $spacing-xl;
+    }
+}

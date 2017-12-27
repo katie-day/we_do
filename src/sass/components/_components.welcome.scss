@@ -1,0 +1,29 @@
+// Welcome 
+
+.welcome {
+    display: table;
+    width: 100%;
+    padding-top: $spacing-xxl;
+    padding-bottom: $spacing-xxl;
+    background: transparent url('./images/flowers.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    @include medium {
+        padding-top: $spacing-xxxl;
+        padding-bottom: $spacing-xxxl;
+    }
+}
+
+.welcome__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.welcome__guest {
+    margin-bottom: rem(60);
+    font-family: $font-family-sans-serif-bold;
+    font-weight: $font-weight-bold;
+    @include medium {
+        margin-bottom: rem(84);
+    }
+}

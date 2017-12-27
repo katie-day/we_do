@@ -1,0 +1,29 @@
+// Info block
+
+.info-block {
+
+    @include medium {
+        padding: $spacing $spacing-l 0;
+    }
+}
+
+.info-block__image {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: $spacing;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include medium {
+        width: 214px;
+        height: 214px;
+        border-radius: 107px;
+    }
+}
