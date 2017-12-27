@@ -34,17 +34,25 @@ The default theme goes first. Following themes will override the default.
 */
 
 $themes: (
-    'pink': (
-        theme-color: #f5b1d8,
-        text-color: #333
+    'white': (
+        theme-color: $color-white,
+        text-color: $color-navy
+    ),
+    'navy': (
+        theme-color: $color-navy,
+        text-color: $color-white
+    ),
+    'plum': (
+        theme-color: $color-plum,
+        text-color: $color-white
     ),
     'green': (
-        theme-color: #a5cc8e,
-        text-color: #333
+        theme-color: $color-green,
+        text-color: $color-white
     ),
-    'blue': (
-        theme-color: #509ac7,
-        text-color: #333
+    'sea': (
+        theme-color: $color-sea,
+        text-color: $color-navy
     )
 );
 
@@ -74,6 +82,9 @@ $themes: (
 
         .u-current-text-color {
             color: $text-color;
+            &:after {
+                background-color: $text-color;
+            }
         }
     }
 
@@ -81,9 +92,10 @@ $themes: (
         color: $theme-color;
     }
 
-    .u-color-#{$alias}\:hover {
-        @include hover {
-            color: $theme-color;
+    .u-link-color-#{$alias} {
+        color: $theme-color;
+        &:hover {
+            color: darken($theme-color, 10%);
         }
     }
 

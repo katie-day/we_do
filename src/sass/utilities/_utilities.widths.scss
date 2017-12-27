@@ -93,7 +93,7 @@ For responsive widths, add one of the breakpoint specifiers at the end of the cl
 
 @include medium {
 
-    @include widths(2 3 4 10, \@medium);
+    @include widths(2 3 4 5 10, \@medium);
 
 }
 

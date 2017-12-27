@@ -1,10 +1,18 @@
 import { connect } from 'react-redux';
-import actions from './actions';
+import { updatingGuest } from './actions';
+import { getGuestById } from './utils';
 import Component from './App.component';
 
 const mapStateToProps = (state, ownProps) => {
+    let guest_id = '';
+
+    if (ownProps.match.params.guest) {
+        guest_id = ownProps.match.params.guest;
+    }
+
     return {
-        guest: ownProps.params.guest,
+        guest_id,
+        guest: state.store.guest,
         isLoading: state.store.loading,
     };
 };
@@ -12,14 +20,11 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         updateGuest: () => {
-            const guest_id = ownProps.params.guest;
-            const guest = {};
-            dispatch(actions.updatingGuest(guest));
-        }
-    }
-}
+            const guest_id = ownProps.match.params.guest;
+            const guest = getGuestById(guest_id);
+            dispatch(updatingGuest(guest));
+        },
+    };
+};
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps,
-)(Component);
+export default connect(mapStateToProps, mapDispatchToProps)(Component);

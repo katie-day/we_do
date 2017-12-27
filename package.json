@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "keymirror": "^0.1.1",
     "lodash": "^4.17.4",
     "node-sass-chokidar": "0.0.3",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-add-to-calendar": "^0.1.4",
-    "react-cursor-position": "^2.1.0",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.0.2",

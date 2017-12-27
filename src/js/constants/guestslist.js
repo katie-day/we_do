@@ -1,372 +1,282 @@
-const guestlist = [
+export const guestlist = [
+    {
+        id: 'rsvp',
+        rsvp: false,
+        type: 'friends',
+        size: 0,
+        lastname: null,
+        names: ['you'],
+    },
     {
         id: 'shelley-and-tony',
         rsvp: false,
         type: 'family',
-        size: 2,
-        lastname: Day,
-        names: [
-            'Shelley',
-            'Tony',
-        ]
+        size: 1,
+        lastname: 'Day',
+        names: ['Shelley', 'Tony'],
     },
     {
         id: 'rebecca-and-josh',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Rebecca',
-            'Josh',
-        ]
+        names: ['Rebecca', 'Josh'],
     },
     {
         id: 'moose-and-amy',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Moose',
-            'Amy',
-        ]
+        names: ['Moose', 'Amy'],
     },
     {
         id: 'steph-and-chris',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Steph',
-            'Chris',
-        ]
+        names: ['Steph', 'Chris'],
     },
     {
         id: 'mike-judy-and-paul',
         rsvp: false,
         type: 'family',
-        size: 3,
+        size: 2,
         lastname: 'Stringer',
-        names: [
-            'Mike',
-            'Judy',
-            'Paul'
-        ]
+        names: ['Mike', 'Judy', 'Paul'],
     },
     {
         id: 'natasha',
         rsvp: false,
         type: 'family',
-        size: 1,
+        size: 0,
         lastname: 'Bale',
-        names: [
-            'Natasha'
-        ]
+        names: ['Natasha'],
     },
     {
-        id: 'Kirsity',
+        id: 'kirsity',
         rsvp: false,
         type: 'family',
-        size: 1,
+        size: 0,
         lastname: 'Bale',
-        names: [
-            'Kirsity'
-        ]
+        names: ['Kirsity'],
     },
     {
         id: 'aunty-jude',
         rsvp: false,
         type: 'family',
-        size: 1,
+        size: 0,
         lastname: 'Bale',
-        names: [
-            'Aunty Jude'
-        ]
+        names: ['Aunty Jude'],
     },
     {
         id: 'robyn-and-dave',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: 'Mason',
-        names: [
-            'Aunty Robyn',
-            'Uncle Dave'
-        ]
+        names: ['Aunty Robyn', 'Uncle Dave'],
     },
     {
         id: 'emma-and-brett',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Emma',
-            'Brett'
-        ]
+        names: ['Emma', 'Brett'],
     },
     {
         id: 'jane-and-jeremy',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Jane',
-            'Jeremy'
-        ]
+        names: ['Jane', 'Jeremy'],
     },
     {
         id: 'sophie-and-matt',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: 'Lang',
-        names: [
-            'Spohie',
-            'Matt'
-        ]
+        names: ['Spohie', 'Matt'],
     },
     {
         id: 'jethro-and-nicole',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: 'Riggins',
-        names: [
-            'Jethro',
-            'Nicole'
-        ]
+        names: ['Jethro', 'Nicole'],
     },
     {
         id: 'lathan-and-nikitta',
         rsvp: false,
         type: 'family',
-        size: 2,
+        size: 1,
         lastname: 'Riggins',
-        names: [
-            'Lathan',
-            'Nikitta'
-        ]
+        names: ['Lathan', 'Nikitta'],
     },
     {
         id: 'teena-lais-and-tess',
         rsvp: false,
         type: 'family',
-        size: 3,
+        size: 2,
         lastname: 'Morris',
-        names: [
-            'Teena',
-            'Lais',
-            'Tess'
-        ]
+        names: ['Teena', 'Lais', 'Tess'],
     },
     {
         id: 'richard-carissa-and-aria',
         rsvp: false,
         type: 'family',
-        size: 3,
+        size: 2,
         lastname: 'Morris',
-        names: [
-            'Richard',
-            'Carissa',
-            'Aria'
-        ]
+        names: ['Richard', 'Carissa', 'Aria'],
     },
     {
         id: 'roger',
         rsvp: false,
         type: 'family',
-        size: 1,
+        size: 0,
         lastname: 'Day',
-        names: [
-            'Roger',
-        ]
+        names: ['Roger'],
     },
     {
         id: 'ann-and-uwe',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Engbers',
-        names: [
-            'Ann',
-            'Uwe'
-        ]
+        names: ['Ann', 'Uwe'],
     },
     {
         id: 'nicola-and-mike',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Blyth',
-        names: [
-            'Nicola',
-            'Mike'
-        ]
+        names: ['Nicola', 'Mike'],
     },
     {
         id: 'gabby-and-murray',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Gabby',
-            'Murray'
-        ]
+        names: ['Gabby', 'Murray'],
     },
     {
         id: 'nicola',
         rsvp: false,
         type: 'friends',
-        size: 1,
+        size: 0,
         lastname: 'Valk',
-        names: [
-            'Nicola'
-        ]
+        names: ['Nicola'],
     },
     {
         id: 'sara-and-mike',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Allan',
-        names: [
-            'Sara',
-            'Mike'
-        ]
+        names: ['Sara', 'Mike'],
     },
     {
         id: 'lisa-and-sas',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Lisa',
-            'Sas'
-        ]
+        names: ['Lisa', 'Sas'],
     },
     {
         id: 'pinky-and-gemma',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Pinky',
-            'Gemma'
-        ]
+        names: ['Pinky', 'Gemma'],
     },
     {
         id: 'beth-and-matt',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Lee',
-        names: [
-            'Beth',
-            'Matt'
-        ]
+        names: ['Beth', 'Matt'],
     },
     {
         id: 'bufty-and-vicente',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Bufty',
-            'Vincente'
-        ]
+        names: ['Bufty', 'Vincente'],
     },
     {
         id: 'daniel-and-tiana',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Daniel',
-            'Tiana'
-        ]
+        names: ['Daniel', 'Tiana'],
     },
     {
         id: 'lauren-and-chris',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Menzies',
-        names: [
-            'Lauren',
-            'Chris'
-        ]
+        names: ['Lauren', 'Chris'],
     },
     {
         id: 'katrina-and-geoff',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'England',
-        names: [
-            'Katrina',
-            'Geoff'
-        ]
+        names: ['Katrina', 'Geoff'],
     },
     {
         id: 'rach-and-dave',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: null,
-        names: [
-            'Rachel',
-            'Dave'
-        ]
+        names: ['Rachel', 'Dave'],
     },
     {
         id: 'lilla',
         rsvp: false,
         type: 'friends',
-        size: 1,
+        size: 0,
         lastname: 'Bothma',
-        names: [
-            'Lilla'
-        ]
+        names: ['Lilla'],
     },
     {
         id: 'terri',
         rsvp: false,
         type: 'friends',
-        size: 1,
+        size: 0,
         lastname: 'Hardisty',
-        names: [
-            'Terri'
-        ]
+        names: ['Terri'],
     },
     {
         id: 'freya',
         rsvp: false,
         type: 'friends',
-        size: 1,
+        size: 0,
         lastname: 'Flockton',
-        names: [
-            'Freya',
-        ]
+        names: ['Freya'],
     },
     {
         id: 'claire-and-ben',
         rsvp: false,
         type: 'friends',
-        size: 2,
+        size: 1,
         lastname: 'Langley',
-        names: [
-            'Claire',
-            'Ben'
-        ]
+        names: ['Claire', 'Ben'],
     },
-
-]
+];

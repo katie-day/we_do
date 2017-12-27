@@ -17,6 +17,7 @@
 
 .u-text-bold {
     font-weight: $font-weight-bold;
+    font-family: $font-family-sans-serif-bold;
 }
 
 .u-text-uppercase {
@@ -31,31 +32,8 @@
     opacity: .75 !important;
 }
 
-.u-font-size\-\- {
-    font-size: .9em;
-}
-
-.u-font-size\+\+ {
-    font-size: 1.2em;
-}
-
-.u-text-center\+\+ {
+.u-text-center {
     text-align: center;
-}
-
-.u-big {
-    font-weight: $font-weight-medium;
-    font-size: rem(18);
-
-    @include medium {
-        font-size: rem(21);
-        line-height: 1.1;
-    }
-
-    @include large {
-        font-size: rem(23);
-        line-height: 1.05;
-    }
 }
 
 // * 1. Ensures text doesn't wrap and break your layout

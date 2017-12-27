@@ -3,7 +3,10 @@
 // ============================================================================
 
 a {
-    color: $color-page-links;
+    color: $color-plum;
     text-decoration: none;
-    transition: $base-transition;
+    transition: color .2s;
+    &:hover {
+        color: $color-blurple;
+    }
 }

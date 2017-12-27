@@ -16,14 +16,29 @@
     margin-bottom: 0 !important;
 }
 
+
 .u-mb {
     margin-bottom: $spacing !important;
 }
 
-.u-mb\+\+ {
-    margin-bottom: round(2 * $spacing) !important;
+.u-mb-xxs {
+    margin-bottom: $spacing-xxs !important;
 }
 
-.u-mb-- {
-    margin-bottom: round(.5 * $spacing) !important;
+.u-mb-xs {
+    margin-bottom: $spacing-xs !important;
 }
+
+.u-mb-s {
+    margin-bottom: $spacing-s !important;
+}
+
+.u-mb-l {
+    margin-bottom: $spacing-l !important;
+}
+
+.u-mb-xl {
+    margin-bottom: $spacing-xl !important;
+}
+
+
