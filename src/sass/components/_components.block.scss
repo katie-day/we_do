@@ -1,0 +1,11 @@
+// block
+
+.block-padded {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: $spacing $spacing-l $spacing-l;
+
+    @include medium {
+        padding: $spacing-l $spacing-xl $spacing-xl;
+    }
+}

@@ -1,0 +1,42 @@
+// Header 
+
+.header {
+    padding-top: $spacing-xs;
+    padding-bottom: $spacing-xs;
+}
+
+.header__logo-group {
+    @include small {
+        text-align: center;
+    }
+}
+
+.header__logo {
+    margin: 0;
+    font-family: $font-family-sans-serif-bold;
+    font-weight: $font-weight-bold;
+    font-size: rem(18);
+}
+
+.header__menu-large {
+    width: 100%;
+    text-align: right;
+}
+
+.header__menu-item {
+    font-size: rem(14);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $spacing;
+    text-transform: uppercase;
+
+    a {
+        display: inline-block;
+        color: $color-navy;
+        text-decoration: none;
+        padding: 3px 0 2px;
+        &:hover {
+            color: $color-blush;
+        }
+    }
+}
