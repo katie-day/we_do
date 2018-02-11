@@ -12,16 +12,13 @@ import Footer from './components/common/footer/Footer.component';
 import Rsvp from './components/rsvp/Rsvp.container';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         const { updateGuest, guest_id } = this.props;
         if (guest_id) {
             updateGuest();
         }
     }
+
     render() {
         const { guest } = this.props;
         return (
