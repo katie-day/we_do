@@ -23,6 +23,7 @@ class Welcome extends Component {
 
     render() {
         const { guest } = this.props;
+        const id = guest.id ? guest.id : '';
         const windowHeight = getWindowHeight();
         const style = {
             minHeight: windowHeight - 60,
@@ -49,7 +50,7 @@ class Welcome extends Component {
                         </h3>
                         <p className="u-hidden@medium">
                             <a
-                                href="#rsvp"
+                                href={`/${id}#rsvp`}
                                 className="btn btn--blush btn--block"
                             >
                                 RSVP

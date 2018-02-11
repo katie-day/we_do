@@ -34,12 +34,12 @@ class App extends Component {
         const { hasLoaded } = this.state;
         return (
             <div>
-                <Header rsvp={guest.rsvp} />
+                <Header guest={guest} />
                 <Welcome guest={guest} />
                 <Details />
                 {guest.type === 'family' && <DetailsSunday />}
-                {!guest.rsvp && <Rsvp />}
                 <Travel />
+                {!guest.rsvp && <Rsvp />}
                 <Accommodation />
                 <Registry />
                 <Extras />

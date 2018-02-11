@@ -10,9 +10,9 @@ const Extras = () => {
                 <div className="line-length-large">
                     <h6>Cell phone reception</h6>
                     <p>
-                        There is no cell phone reception at Kumeu Valley Estate,
-                        if you need to get in contact with the venue, or if
-                        someone may need to contact you on the day, the venue
+                        Cell phone reception can be patchy at Kumeu Valley
+                        Estate, if you need to get in contact with the venue, or
+                        if someone may need to contact you on the day, the venue
                         phone number is{' '}
                         <a href="tel:094117270">+64 09 411 7270</a>.
                     </p>
@@ -33,13 +33,13 @@ const Extras = () => {
                         There is plenty of parking at the venue, however you
                         will be unable to leave your car overnight. If you do
                         think you might have a couple of sneaky drinks please
-                        choose to take the bus.
+                        choose to take the complimentry bus.
                     </p>
                     <h6>Taxis and Uber</h6>
                     <p>
-                        Taxis can be pre-booked at your own expense however due
-                        to the location of Kumeu Valley taxis won’t be available
-                        on call at the end of the night.
+                        Taxis can be pre-booked at your own expense, however due
+                        to the location of Kumeu Valley taxis may not be
+                        available on call at the end of the night.
                     </p>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const DetailsSunday = () => {
         >
             <div className="gutters">
                 <h2 className="u-current-text-color">
-                    you’re invited to sunday lunch
+                    you’re invited to sunday happy hour
                 </h2>
                 <p className="u-current-text-color u-mb-xl">
                     Enjoy catching up with family from near and far.
@@ -28,7 +28,7 @@ const DetailsSunday = () => {
                         <p className="u-current-text-color">
                             Sunday 13 May 2018
                             <br />
-                            12 NOON
+                            2PM onwards
                         </p>
                         <p className="u-text-bold u-current-text-color">
                             Venue to be confirmed

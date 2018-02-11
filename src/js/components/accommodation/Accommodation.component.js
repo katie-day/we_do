@@ -12,8 +12,8 @@ const Accommodation = () => {
                         The Waimauku region is rather remote and there is
                         limited accommodation surrounding Kumeu Valley, we
                         recommend staying in Takapuna on the North Shore and
-                        taking the bus – that way you get to enjoy the day to
-                        the fullest.
+                        taking the complimentry bus – that way you get to enjoy
+                        the day to the fullest.
                     </p>
                 </div>
                 <div className="grid-flex grid--col-spacing grid--row-spacing">
@@ -29,7 +29,7 @@ const Accommodation = () => {
                             </div>
                             <h4>Airbnb</h4>
                             <p>
-                                Takapuna and the surrounding suburbs have a huge
+                                Takapuna and the surrounding suburbs have a
                                 range of places to suit.
                             </p>
                             <p>

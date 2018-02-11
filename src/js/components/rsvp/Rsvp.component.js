@@ -13,7 +13,13 @@ class RSVP extends Component {
     super(props) {}
     render() {
         const { handleSubmit, guest, isFormLoading, rsvpValue } = this.props;
-        console.log('rsvpValue: ', rsvpValue);
+        // console.log('rsvpValue: ', rsvpValue);
+        let nameLabel = "Guest's names";
+        let namePlaceholder = 'eg. Shelley and Tony Day';
+        if (guest.size < 1) {
+            nameLabel = 'Guest name';
+            namePlaceholder = 'eg. Rebecca Day';
+        }
         return (
             <div className="section u-bg-color-sea u-text-center" id="rsvp">
                 <div className="gutters">
@@ -28,26 +34,12 @@ class RSVP extends Component {
                                 <Field
                                     name="q3_name"
                                     type="text"
-                                    label="Guest name"
+                                    label={nameLabel}
                                     required={true}
                                     component={InputField}
+                                    placeholder={namePlaceholder}
                                 />
-                                {guest.size >= 1 && (
-                                    <Field
-                                        name="q10_name2"
-                                        type="text"
-                                        label="Guest name"
-                                        component={InputField}
-                                    />
-                                )}
-                                {guest.size === 2 && (
-                                    <Field
-                                        name="q11_name3"
-                                        type="text"
-                                        label="Guest name"
-                                        component={InputField}
-                                    />
-                                )}
+
                                 <Field
                                     name="q4_email"
                                     type="email"
@@ -60,6 +52,11 @@ class RSVP extends Component {
                                     type="text"
                                     label="Postal address"
                                     component={InputField}
+                                />
+                                <Field
+                                    name="q13_anyComments"
+                                    label="Any comments, dietary requirements etc?"
+                                    component={TextAreaField}
                                 />
                                 <div className="form__field width-1/2@medium">
                                     <p className="u-mb-xxs u-text-bold">
@@ -85,34 +82,29 @@ class RSVP extends Component {
                                         } can't attend the wedding.`}
                                         component={RadioField}
                                     />
-                                    {rsvpValue === 'Yes - attending' && (
-                                        <Field
-                                            name="q6_typeA"
-                                            type="checkbox"
-                                            label={`${
-                                                guest.size > 0 ? 'We' : 'I'
-                                            } would like to take the bus to & from Takapuna`}
-                                            component={CheckboxField}
-                                            value="Yes! Take the bus"
-                                        />
-                                    )}
                                     {guest.type === 'family' && (
                                         <Field
                                             name="q12_typeA12"
                                             type="checkbox"
                                             label={`${
                                                 guest.size > 0 ? 'We' : 'I'
-                                            } would like to come to Sunday lunch`}
+                                            } would like to come to Sunday happy hour`}
                                             component={CheckboxField}
-                                            value="Yes! to sunday lunch"
+                                            value="Yes! to sunday"
+                                        />
+                                    )}
+                                    {rsvpValue === 'Yes - attending' && (
+                                        <Field
+                                            name="q6_typeA"
+                                            type="checkbox"
+                                            label={`${
+                                                guest.size > 0 ? 'We' : 'I'
+                                            } would like to take the complimentry bus to & from Takapuna`}
+                                            component={CheckboxField}
+                                            value="Yes! Take the bus"
                                         />
                                     )}
                                 </div>
-                                <Field
-                                    name="q13_anyComments"
-                                    label="Any comments, dietry requirements etc?"
-                                    component={TextAreaField}
-                                />
 
                                 <div className="width-full">
                                     <button

@@ -36,6 +36,14 @@
     text-align: center;
 }
 
+.u-text-s {
+    font-size: rem(13);
+}
+
+.u-text-color-peach {
+    color: $color-peach;
+}
+
 // * 1. Ensures text doesn't wrap and break your layout
 // * 2. Trigger overflow behavior
 // * 3. Truncate the text

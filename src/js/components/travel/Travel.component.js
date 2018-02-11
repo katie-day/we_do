@@ -24,11 +24,16 @@ const Travel = () => {
                             <p className="u-current-text-color">
                                 We are putting on a complimentry bus service to
                                 and from the wedding. The bus will depart from{' '}
-                                <a href="#" className="u-current-text-color">
+                                <a
+                                    href="https://goo.gl/maps/pfEwYhJgpqA2"
+                                    className="u-current-text-color"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     the heart of Takapuna
                                 </a>{' '}
                                 and return at the end of the night. From here
-                                there will be easy access to Uber and Taxi’s to
+                                there will be easy access to Uber and taxis to
                                 take you the rest of the way. If you choose to
                                 catch the bus, further information will be
                                 provided.
@@ -44,7 +49,8 @@ const Travel = () => {
                             <p className="u-current-text-color">
                                 Kumeu Valley Estate is located at 972 Old North
                                 Road, Waimauku. Please note: due to the remote
-                                location taxi’s can’t be ordered from the venue.
+                                location there is a limited taxi service to and
+                                from the venue.
                             </p>
                             <p>
                                 <a

@@ -12,7 +12,7 @@ const Details = () => {
         description:
             'We are getting married and would love you to celebrate with us!',
         location: 'Kumeu Valley Estate, Old North Road, Waimauku, New Zealand',
-        startTime: '2018-05-12T15:30:00+12:00',
+        startTime: '2018-05-12T15:00:00+12:00',
         endTime: '2018-05-12T23:00:00+12:00',
     };
     const isFacebook = isFacebookApp();
@@ -33,14 +33,12 @@ const Details = () => {
                             </div>
                             <h4>When</h4>
                             <p>
-                                <span className="u-text-bold">
-                                    3:30PM — 11PM
-                                </span>
+                                <span className="u-text-bold">3PM — 11PM</span>
                                 <br />
                                 Saturday 12 May 2018
                             </p>
                             {!isFacebook && (
-                                <div className="btn-group">
+                                <div className="btn-group u-mb">
                                     <AddToCalendar
                                         event={event}
                                         buttonLabel="Add to your calendar"
@@ -48,6 +46,10 @@ const Details = () => {
                                     />
                                 </div>
                             )}
+                            <p className="u-muted u-text-s">
+                                Bubbles and beer from 3PM <br />Ceremony
+                                beginning at 3:30PM
+                            </p>
                         </div>
                     </div>
                     <div className="width-1/2@medium">

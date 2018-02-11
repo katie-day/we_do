@@ -5,7 +5,17 @@
 // Row spacing (Grid items) ---------------------------------------------------
 .grid--row-spacing {
     > * {
-        margin-bottom: 3rem;
+        margin-bottom: $spacing-xl;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.grid--row-spacing-s {
+    > * {
+        margin-bottom: $spacing;
 
         &:last-child {
             margin-bottom: 0;

@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 class Header extends Component {
     super(props) {}
     render() {
-        const { rsvp } = this.props;
+        const { guest } = this.props;
+        const id = guest.id ? guest.id : '';
         return (
             <div className="header" id="header">
                 <div className="gutters">
@@ -15,19 +16,26 @@ class Header extends Component {
                         <div className="width-4/5@medium  u-hidden@small">
                             <ul className="list-inline header__menu-large">
                                 <li className="header__menu-item">
-                                    <a href="#the-details">The details</a>
+                                    <a href={`${id}#the-details`}>
+                                        The details
+                                    </a>
                                 </li>
-                                {!rsvp && (
+                                {!guest.rsvp && (
                                     <li className="header__menu-item">
-                                        <a href="#rsvp">RSVP</a>
+                                        <a href={`${id}#rsvp`}>RSVP</a>
                                     </li>
                                 )}
                                 <li className="header__menu-item">
-                                    <a href="#travel">Travel & accommodation</a>
+                                    <a href={`${id}#travel`}>Travel</a>
+                                </li>
+                                <li className="header__menu-item">
+                                    <a href={`${id}#accommodation`}>
+                                        Accommodation
+                                    </a>
                                 </li>
 
                                 <li className="header__menu-item">
-                                    <a href="#the-extras">The extras</a>
+                                    <a href={`${id}#the-extras`}>The extras</a>
                                 </li>
                             </ul>
                         </div>
