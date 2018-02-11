@@ -14,9 +14,6 @@ import Rsvp from './components/rsvp/Rsvp.container';
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            hasLoaded: false,
-        };
     }
 
     componentDidMount() {
@@ -24,14 +21,9 @@ class App extends Component {
         if (guest_id) {
             updateGuest();
         }
-
-        this.setState({
-            hasLoaded: true,
-        });
     }
     render() {
         const { guest } = this.props;
-        const { hasLoaded } = this.state;
         return (
             <div>
                 <Header guest={guest} />

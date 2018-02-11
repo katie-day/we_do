@@ -1,15 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-// import { Router, Route, browserHistory } from "react-router";
-import {
-    Redirect,
-    Route,
-    BrowserRouter as Router,
-    Switch,
-} from 'react-router-dom';
-// import 'whatwg-fetch';
-// import addToCalendar from 'addtocalendar/addtocalendar'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import store from './js/store/configureStore';
 import App from './js/App.container';

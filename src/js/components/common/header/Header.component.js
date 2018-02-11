@@ -16,26 +16,42 @@ class Header extends Component {
                         <div className="width-4/5@medium  u-hidden@small">
                             <ul className="list-inline header__menu-large">
                                 <li className="header__menu-item">
-                                    <a href={`${id}#the-details`}>
+                                    <a
+                                        href={`https://daleandkatie.co.nz/${id}#the-details`}
+                                    >
                                         The details
                                     </a>
                                 </li>
                                 {!guest.rsvp && (
                                     <li className="header__menu-item">
-                                        <a href={`${id}#rsvp`}>RSVP</a>
+                                        <a
+                                            href={`https://daleandkatie.co.nz/${id}#rsvp`}
+                                        >
+                                            RSVP
+                                        </a>
                                     </li>
                                 )}
                                 <li className="header__menu-item">
-                                    <a href={`${id}#travel`}>Travel</a>
+                                    <a
+                                        href={`https://daleandkatie.co.nz/${id}#travel`}
+                                    >
+                                        Travel
+                                    </a>
                                 </li>
                                 <li className="header__menu-item">
-                                    <a href={`${id}#accommodation`}>
+                                    <a
+                                        href={`https://daleandkatie.co.nz/${id}#accommodation`}
+                                    >
                                         Accommodation
                                     </a>
                                 </li>
 
                                 <li className="header__menu-item">
-                                    <a href={`${id}#the-extras`}>The extras</a>
+                                    <a
+                                        href={`https://daleandkatie.co.nz/${id}#the-extras`}
+                                    >
+                                        The extras
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -47,11 +63,11 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-    rsvp: PropTypes.bool,
+    guest: PropTypes.object,
 };
 
 Header.defaultProps = {
-    rsvp: true,
+    guest: {},
 };
 
 export default Header;

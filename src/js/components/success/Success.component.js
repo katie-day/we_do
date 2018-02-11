@@ -4,12 +4,13 @@ import { getWindowHeight } from '../../utils';
 
 const Success = () => {
     const windowHeight = getWindowHeight();
+    const guest = {};
     const style = {
         minHeight: windowHeight - 50,
     };
     return (
         <div>
-            <Header rsvp={true} />
+            <Header guest={guest} />
             <div className="welcome u-text-center t-plum" style={style}>
                 <div className="welcome__background" />
                 <div className="gutters welcome__table-cell">
