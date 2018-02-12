@@ -5,7 +5,7 @@ class Header extends Component {
     super(props) {}
     render() {
         const { guest } = this.props;
-        const id = guest.id ? guest.id : '';
+        // const id = guest.id ? guest.id : '';
         return (
             <div className="header" id="header">
                 <div className="gutters">
