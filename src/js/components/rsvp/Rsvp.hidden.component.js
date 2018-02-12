@@ -42,14 +42,14 @@ const RsvpHidden = ({ values }) => {
                     id="input_5_0"
                     name="q5_rsvp"
                     value="Yes! I'll be there"
-                    checked={values.q5_rsvp === 'Yes - attending'}
+                    checked={values.q5_rsvp === 'Yes'}
                 />
                 <input
                     type="radio"
                     id="input_5_1"
                     name="q5_rsvp"
                     value="Sorry, we can't attend"
-                    checked={values.q5_rsvp === 'No - not attending'}
+                    checked={values.q5_rsvp === 'No'}
                 />
                 <input
                     type="checkbox"

@@ -84,7 +84,6 @@ class RSVP extends Component {
                                     {guest.type === 'family' && (
                                         <Field
                                             name="q12_typeA12"
-                                            type="checkbox"
                                             label={`${
                                                 guest.size > 0 ? 'We' : 'I'
                                             } would like to come to Sunday happy hour`}
@@ -94,7 +93,6 @@ class RSVP extends Component {
                                     {rsvpValue === 'Yes' && (
                                         <Field
                                             name="q6_typeA"
-                                            type="checkbox"
                                             label={`${
                                                 guest.size > 0 ? 'We' : 'I'
                                             } would like to take the complimentry bus to & from Takapuna`}
