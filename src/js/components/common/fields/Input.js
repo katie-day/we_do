@@ -14,7 +14,7 @@ const Input = ({
         <div className={`form__field width-1/2@medium ${className}`}>
             <label
                 htmlFor={input.name}
-                className={`label ${error && touched ? 'label--error' : ''}`}
+                className={error && touched ? 'label--error' : ''}
             >
                 <span className="form__label">
                     {label}

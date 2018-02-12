@@ -68,7 +68,7 @@ export const guestlist = [
         rsvp: false,
         type: 'family',
         size: 0,
-        lastname: 'Bale',
+        lastname: null,
         names: ['Aunty Jude'],
     },
     {
@@ -140,7 +140,7 @@ export const guestlist = [
         rsvp: false,
         type: 'family',
         size: 0,
-        lastname: 'Day',
+        lastname: null,
         names: ['Uncle Roger'],
     },
     {
@@ -220,7 +220,7 @@ export const guestlist = [
         rsvp: false,
         type: 'friends',
         size: 1,
-        lastname: null,
+        lastname: 'McKechnie',
         names: ['Daniel', 'Teana'],
     },
     {
@@ -328,12 +328,12 @@ export const guestlist = [
         names: ['Cam', 'Nina'],
     },
     {
-        id: 'clint-and-eugene',
+        id: 'clint-and-eugenie',
         rsvp: false,
         type: 'friends',
         size: 1,
         lastname: 'Williams',
-        names: ['Clint', 'Eugene'],
+        names: ['Clint', 'Eugenie'],
     },
     {
         id: 'stacey-and-damien',
