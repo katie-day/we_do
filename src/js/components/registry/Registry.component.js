@@ -6,7 +6,7 @@ const Registry = () => {
             className="section u-text-center u-background-planes"
             id="registry"
         >
-            <div className="gutters">
+            <div className="gutters gutters-1/2@small">
                 <div className="block-padded u-bg-color-white">
                     <h2>Gift registry</h2>
                     <div className="line-length u-auto u-mb-l">

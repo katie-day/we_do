@@ -30,6 +30,13 @@
     }
 }
 
+.gutters-1\/2\@small {
+    @include small {
+        padding-left: $spacing-s;
+        padding-right: $spacing-s;
+    }
+}
+
 .line-length {
     max-width: $line-length;
 }

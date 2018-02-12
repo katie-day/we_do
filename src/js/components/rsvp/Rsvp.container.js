@@ -3,7 +3,7 @@ import { reduxForm, formValueSelector } from 'redux-form';
 import { pendingFormSubmission } from '../../actions';
 import Component from './Rsvp.component';
 
-const formName = 'Rsvp';
+const formName = 'rsvp';
 
 const validate = values => {
     const errors = {};
@@ -40,14 +40,12 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onSubmit: submit => {
-            console.log('submit: ', submit);
             dispatch(pendingFormSubmission(true));
             const input = document.getElementById('simple_spc');
             const form = document.getElementById('72975928197881');
             input.value = '72975928197881-72975928197881';
 
             form.submit();
-            // dispatch(actionCreator)
         },
     };
 };

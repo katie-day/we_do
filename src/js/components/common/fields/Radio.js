@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Radio = ({ input, id, meta: { touched, error }, label, className }) => {
+const Radio = ({ input, id, meta: { touched, error }, label }) => {
     return (
-        <div className={`radio ${className}`}>
-            <input {...input} id={id} type="radio" />&nbsp;&nbsp;
-            <label htmlFor={id}>
-                {label}
+        <div className="radio">
+            <label>
+                <input
+                    {...input}
+                    id={id}
+                    type="radio"
+                    className="radio__input"
+                />
+                <span className="label">{label}</span>
                 {touched &&
                     error && <span className="form__error"> {error}</span>}
             </label>
@@ -19,11 +24,6 @@ Radio.propTypes = {
     meta: PropTypes.object.isRequired,
     label: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
-    className: PropTypes.string,
-};
-
-Radio.defaultProps = {
-    className: '',
 };
 
 export default Radio;

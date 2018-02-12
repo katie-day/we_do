@@ -13,7 +13,6 @@ class RSVP extends Component {
     super(props) {}
     render() {
         const { handleSubmit, guest, isFormLoading, rsvpValue } = this.props;
-        // console.log('rsvpValue: ', rsvpValue);
         let nameLabel = "Guest's names";
         let namePlaceholder = 'eg. Shelley and Tony Day';
         if (guest.size < 1) {
@@ -22,12 +21,12 @@ class RSVP extends Component {
         }
         return (
             <div className="section u-bg-color-sea u-text-center" id="rsvp">
-                <div className="gutters">
+                <div className="gutters gutters-1/2@small">
                     <div className="block-padded u-bg-color-white">
                         <h4>RSVP</h4>
                         <p>
                             Please RSVP by{' '}
-                            <span className="u-text-bold">02 March 2018</span>
+                            <span className="u-text-bold">04 March 2018</span>
                         </p>
                         <form onSubmit={handleSubmit} className="form">
                             <div className="grid-flex grid--col-spacing">
@@ -55,7 +54,7 @@ class RSVP extends Component {
                                 />
                                 <Field
                                     name="q13_anyComments"
-                                    label="Any comments, dietary requirements etc?"
+                                    label="Any comments, dietary requirements, song requests etc?"
                                     component={TextAreaField}
                                 />
                                 <div className="form__field width-1/2@medium">
@@ -70,13 +69,13 @@ class RSVP extends Component {
                                             guest.size > 0 ? 'we' : 'I'
                                         } will be be there!`}
                                         component={RadioField}
-                                        value="Yes - attending"
+                                        value="Yes"
                                     />
                                     <Field
                                         name="q5_rsvp"
                                         id="input_5_1"
                                         type="radio"
-                                        value="No - not attending"
+                                        value="No"
                                         label={`Sorry, ${
                                             guest.size > 0 ? 'we' : 'I'
                                         } can't attend the wedding.`}
@@ -90,10 +89,9 @@ class RSVP extends Component {
                                                 guest.size > 0 ? 'We' : 'I'
                                             } would like to come to Sunday happy hour`}
                                             component={CheckboxField}
-                                            value="Yes! to sunday"
                                         />
                                     )}
-                                    {rsvpValue === 'Yes - attending' && (
+                                    {rsvpValue === 'Yes' && (
                                         <Field
                                             name="q6_typeA"
                                             type="checkbox"
@@ -101,7 +99,6 @@ class RSVP extends Component {
                                                 guest.size > 0 ? 'We' : 'I'
                                             } would like to take the complimentry bus to & from Takapuna`}
                                             component={CheckboxField}
-                                            value="Yes! Take the bus"
                                         />
                                     )}
                                 </div>

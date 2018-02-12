@@ -10,7 +10,6 @@ const defaultState = {
         lastname: null,
         names: [],
     },
-    loading: false,
     isFormLoading: false,
 };
 

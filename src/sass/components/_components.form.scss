@@ -40,4 +40,25 @@
 .radio,
 .checkbox {
     margin-bottom: 8px;
+
+    .form__error {
+        padding-left: 26px;
+    }
 }
+
+.radio__input,
+.checkbox__input {
+    position: absolute;
+    top:4px;
+    left:0;
+}
+
+label {
+    position: relative;
+}
+
+.label {
+    display: block;
+    padding-left: 26px;
+}
+

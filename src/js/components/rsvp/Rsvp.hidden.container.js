@@ -3,7 +3,7 @@ import Component from './Rsvp.hidden.component';
 
 const mapStateToProps = state => {
     return {
-        values: state.form.Rsvp.values,
+        values: state.form.rsvp.values,
     };
 };
 
