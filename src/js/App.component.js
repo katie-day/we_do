@@ -26,8 +26,8 @@ class App extends Component {
                 <Header guest={guest} />
                 <Welcome guest={guest} />
                 <Details />
-                {guest.type === 'family' && <DetailsSunday />}
                 <Travel />
+                {guest.type === 'family' && <DetailsSunday />}
                 {!guest.rsvp && <Rsvp />}
                 <Accommodation />
                 <Registry />

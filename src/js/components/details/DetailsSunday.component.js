@@ -9,7 +9,7 @@ const DetailsSunday = () => {
         >
             <div className="gutters">
                 <h2 className="u-current-text-color">
-                    you’re invited to sunday happy hour
+                    you’re also invited to sunday happy hour
                 </h2>
                 <p className="u-current-text-color u-mb-xl">
                     Enjoy catching up with family from near and far.

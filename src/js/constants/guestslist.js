@@ -84,7 +84,7 @@ export const guestlist = [
         rsvp: false,
         type: 'family',
         size: 1,
-        lastname: 'Mason',
+        lastname: null,
         names: ['Aunty Robyn', 'Uncle Dave'],
     },
     {
