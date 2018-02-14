@@ -47,7 +47,7 @@ const Details = () => {
                                 </div>
                             )}
                             <p className="u-muted u-text-s">
-                                Bubbles and beer from 3PM <br />Ceremony
+                                Bubbles and beer from 3:00PM <br />Ceremony
                                 beginning at 3:30PM
                             </p>
                         </div>

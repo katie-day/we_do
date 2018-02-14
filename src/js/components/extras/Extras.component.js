@@ -32,8 +32,8 @@ const Extras = () => {
                     <p>
                         There is plenty of parking at the venue, however you
                         will be unable to leave your car overnight. If you do
-                        think you might have a couple of sneaky drinks please
-                        choose to take the complimentry bus.
+                        think you might have a couple of drinks please choose to
+                        take the complimentry bus to and from the venue.
                     </p>
                     <h6>Taxis and Uber</h6>
                     <p>

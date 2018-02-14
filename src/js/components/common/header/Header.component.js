@@ -1,15 +1,17 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-const Header = () => {
-    // const id = guest.id ? guest.id : '';
+const Header = ({ guest }) => {
+    const id = guest.id ? guest.id : '';
     return (
         <div className="header" id="header">
             <div className="gutters">
                 <div className="grid-flex">
                     <div className="header__logo-group">
                         <p className="header__logo header__menu-item">
-                            <a href="https://daleandkatie.co.nz/">K / D</a>
+                            <a href={`https://daleandkatie.co.nz/#/${id}`}>
+                                K / D
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -18,13 +20,13 @@ const Header = () => {
     );
 };
 
-// Header.propTypes = {
-//     guest: PropTypes.object,
-// };
+Header.propTypes = {
+    guest: PropTypes.object,
+};
 
-// Header.defaultProps = {
-//     guest: {},
-// };
+Header.defaultProps = {
+    guest: {},
+};
 
 export default Header;
 

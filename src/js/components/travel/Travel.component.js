@@ -10,7 +10,7 @@ const Travel = () => {
                 <div className="line-length u-auto">
                     <p className="u-current-text-color u-mb-xl">
                         Kumeu Valley Estate is situated about 30 minutes from
-                        Auckland city and about 45 minutes from Takapuna on the
+                        Auckland City and about 45 minutes from Takapuna on the
                         North Shore.
                     </p>
                 </div>

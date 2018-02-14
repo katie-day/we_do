@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { getWindowHeight } from '../../utils';
 
 class Welcome extends Component {
-    super(props) {}
-
     renderNames() {
         const { guest } = this.props;
         const names = guest.names;
@@ -23,7 +21,6 @@ class Welcome extends Component {
 
     render() {
         const { guest } = this.props;
-        const id = guest.id ? guest.id : '';
         const windowHeight = getWindowHeight();
         const style = {
             minHeight: windowHeight - 60,
@@ -48,14 +45,6 @@ class Welcome extends Component {
                             invite you to dine, dance and enjoy this special day
                             with us.
                         </h3>
-                        <p className="u-hidden@medium">
-                            <a
-                                href={`/${id}#rsvp`}
-                                className="btn btn--blush btn--block"
-                            >
-                                RSVP
-                            </a>
-                        </p>
                     </div>
                 </div>
             </div>

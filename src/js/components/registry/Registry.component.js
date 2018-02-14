@@ -15,7 +15,7 @@ const Registry = () => {
                             For those wishing to honour our special occasion
                             with a gift, a contribution towards our honeymoon
                             would be greatly appreciated. You will be helping us
-                            to create awesome memories that will last a forever.
+                            to create awesome memories that will last forever.
                         </p>
                     </div>
                     <h5 className="u-current-text-color">
