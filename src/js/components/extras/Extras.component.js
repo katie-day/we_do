@@ -20,7 +20,7 @@ const Extras = () => {
                     <p>
                         We would love all our guests to have the opportunity to
                         let their hair down and enjoy the night, we request that
-                        this is an adults only event.
+                        this is a child free event.
                     </p>
                     <h6>Dress</h6>
                     <p>
