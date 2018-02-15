@@ -307,8 +307,8 @@ export const guestlist = [
         id: 'jill',
         rsvp: false,
         type: 'family',
-        size: 1,
-        lastname: null,
+        size: 0,
+        lastname: 'Waru',
         names: ['Jill'],
     },
     {
