@@ -455,4 +455,12 @@ export const guestlist = [
         lastname: null,
         names: ['Vic', 'Pia'],
     },
+    {
+        id: 'sarah-and-natalia',
+        rsvp: false,
+        type: 'friends',
+        size: 1,
+        lastname: '',
+        names: ['Sarah', 'Natalia'],
+    },
 ];
