@@ -14,7 +14,7 @@ class RSVP extends Component {
     render() {
         const { handleSubmit, guest, isFormLoading, rsvpValue } = this.props;
         let nameLabel = "Guest's names";
-        let namePlaceholder = 'eg. Shelley and Tony Day';
+        let namePlaceholder = 'eg. Natalie and Patrick Campbell';
         if (guest.size < 1) {
             nameLabel = 'Guest name';
             namePlaceholder = 'eg. Rebecca Day';
