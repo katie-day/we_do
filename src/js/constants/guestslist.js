@@ -380,7 +380,7 @@ export const guestlist = [
         rsvp: false,
         type: 'friends',
         size: 1,
-        lastname: 'Sing',
+        lastname: null,
         names: ['Pratheen', 'partner'],
     },
     {
@@ -416,12 +416,12 @@ export const guestlist = [
         names: ['Liz', 'Gordon'],
     },
     {
-        id: 'richard-and-dianna',
+        id: 'richard-and-diana',
         rsvp: false,
         type: 'friends',
         size: 1,
         lastname: 'Wilks',
-        names: ['Richard', 'Dianna'],
+        names: ['Richard', 'Diana'],
     },
     {
         id: 'dave-and-margaret',
@@ -440,7 +440,7 @@ export const guestlist = [
         names: ['Mary', 'Andrew'],
     },
     {
-        id: 'nick-and-bernadette',
+        id: 'nick-and-bernie',
         rsvp: false,
         type: 'friends',
         size: 1,
