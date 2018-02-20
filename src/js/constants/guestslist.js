@@ -456,11 +456,11 @@ export const guestlist = [
         names: ['Vic', 'Pia'],
     },
     {
-        id: 'sarah-and-natalia',
+        id: 'sarah-and-mimi',
         rsvp: false,
         type: 'friends',
         size: 1,
         lastname: '',
-        names: ['Sarah', 'Natalia'],
+        names: ['Sarah', 'Mimi'],
     },
 ];

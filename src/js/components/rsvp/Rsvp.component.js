@@ -17,7 +17,7 @@ class RSVP extends Component {
         let namePlaceholder = 'eg. Natalie and Patrick Campbell';
         if (guest.size < 1) {
             nameLabel = 'Guest name';
-            namePlaceholder = 'eg. Rebecca Day';
+            namePlaceholder = 'eg. Natalie Campbell';
         }
         return (
             <div className="section u-bg-color-sea u-text-center" id="rsvp">
