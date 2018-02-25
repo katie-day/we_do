@@ -26,7 +26,7 @@ class RSVP extends Component {
                         <h4>RSVP</h4>
                         <p>
                             Please RSVP by{' '}
-                            <span className="u-text-bold">12 March 2018</span>
+                            <span className="u-text-bold">15 March 2018</span>
                         </p>
                         <form onSubmit={handleSubmit} className="form">
                             <div className="grid-flex grid--col-spacing">

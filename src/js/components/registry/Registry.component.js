@@ -11,7 +11,7 @@ const Registry = () => {
                     <h2>Gift registry</h2>
                     <div className="line-length u-auto u-mb-l">
                         <p>
-                            We are very fortunate to have much of what we need.<br />
+                            We are very fortunate to have most of what we need.<br />
                             For those wishing to honour our special occasion
                             with a gift, a contribution towards our honeymoon
                             would be greatly appreciated. You will be helping us
@@ -59,17 +59,17 @@ const Registry = () => {
                             <div className="line-length u-auto">
                                 <p className="u-current-text-color">
                                     If you would prefer to give a physical gift,
-                                    we have also set up a small registry at Shut
+                                    we have set up a registry at Shut
                                     The Front Door. Please visit in store at{' '}
                                     <a
-                                        href="https://www.shutthefrontdoor.co.nz/pages/contact-us"
+                                        href="https://www.shutthefrontdoor.co.nz/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="u-current-text-color"
                                     >
                                         Shut The Front Door Takapuna
                                     </a>{' '}
-                                    to view our registry.
+                                    to view our registry or email me at <a href="mailto:katie.and.dale.stringer@gmail.com">katie.and.dale.stringer@gmail.com</a> and I will send you the list to shop online!
                                 </p>
                             </div>
                         </div>

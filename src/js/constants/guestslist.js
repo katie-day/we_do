@@ -9,7 +9,7 @@ export const guestlist = [
     },
     {
         id: 'shelley-and-tony',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 1,
         lastname: 'Day',
@@ -17,7 +17,7 @@ export const guestlist = [
     },
     {
         id: 'rebecca-and-josh',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 1,
         lastname: null,
@@ -57,7 +57,7 @@ export const guestlist = [
     },
     {
         id: 'natasha',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 0,
         lastname: 'Bale',
@@ -65,7 +65,7 @@ export const guestlist = [
     },
     {
         id: 'kirsity',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 0,
         lastname: 'Bale',
@@ -73,7 +73,7 @@ export const guestlist = [
     },
     {
         id: 'aunty-jude',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 0,
         lastname: null,
@@ -120,12 +120,12 @@ export const guestlist = [
         names: ['Jethro', 'Nicole'],
     },
     {
-        id: 'lathan-and-nikitta',
+        id: 'lathan-and-nikita',
         rsvp: false,
         type: 'friends',
         size: 1,
         lastname: 'Riggins',
-        names: ['Lathan', 'Nikitta'],
+        names: ['Lathan', 'nikita'],
     },
     {
         id: 'teena-lais-and-tess',
@@ -153,7 +153,7 @@ export const guestlist = [
     },
     {
         id: 'ann-and-uwe',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Engbers',
@@ -169,7 +169,7 @@ export const guestlist = [
     },
     {
         id: 'gabby-and-murray',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: null,
@@ -177,7 +177,7 @@ export const guestlist = [
     },
     {
         id: 'nicola',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 0,
         lastname: 'Valk',
@@ -185,7 +185,7 @@ export const guestlist = [
     },
     {
         id: 'sara-and-mike',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Allan',
@@ -201,7 +201,7 @@ export const guestlist = [
     },
     {
         id: 'pinky-and-gemma',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: null,
@@ -209,7 +209,7 @@ export const guestlist = [
     },
     {
         id: 'beth-and-matt',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Lee',
@@ -217,7 +217,7 @@ export const guestlist = [
     },
     {
         id: 'bufty-and-vicente',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: null,
@@ -265,7 +265,7 @@ export const guestlist = [
     },
     {
         id: 'terri',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 0,
         lastname: 'Hardisty',
@@ -281,7 +281,7 @@ export const guestlist = [
     },
     {
         id: 'claire-and-ben',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Langley',
@@ -305,7 +305,7 @@ export const guestlist = [
     },
     {
         id: 'jill',
-        rsvp: false,
+        rsvp: true,
         type: 'family',
         size: 0,
         lastname: 'Waru',
@@ -321,7 +321,7 @@ export const guestlist = [
     },
     {
         id: 'brendon-and-amy',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Wallis',
@@ -337,7 +337,7 @@ export const guestlist = [
     },
     {
         id: 'clint-and-eugenie',
-        rsvp: false,
+        rsvp: true,
         type: 'friends',
         size: 1,
         lastname: 'Williams',
