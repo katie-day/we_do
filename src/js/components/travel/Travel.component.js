@@ -23,14 +23,14 @@ const Travel = () => {
                             <h5 className="u-current-text-color">By bus</h5>
                             <p className="u-current-text-color">
                                 We are putting on a complimentry bus service to
-                                and from the wedding. The bus will depart from{' '}
+                                and from the wedding. The bus will depart at 2:20pm from{' '}
                                 <a
                                     href="https://goo.gl/maps/pfEwYhJgpqA2"
                                     className="u-current-text-color"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    the heart of Takapuna
+                                    129 Hurstmere Road, Takapuna
                                 </a>{' '}
                                 and return at the end of the night. From here
                                 there will be easy access to Uber and taxis to
