@@ -44,7 +44,7 @@ const Registry = () => {
                                 <br />
                                 Please add the reference:{' '}
                                 <span className="u-text-bold">
-                                    MF25261 | Stringer
+                                    MF25261
                                 </span>
                                 <br />
                                 And email Annette at{' '}
