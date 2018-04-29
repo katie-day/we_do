@@ -32,7 +32,7 @@ const DetailsSunday = () => {
                         </p>
                         <p className="u-current-text-color">
                             <span className="u-text-bold">Hurstmere Road Brew Bar</span><br/>
-                            136 Hurstemere Road, Takapuna (<a href="https://goo.gl/maps/MaqsBqU28Tu" className="u-link-color-white">see on google maps here</a>)
+                            136 Hurstmere Road, Takapuna (<a href="https://goo.gl/maps/MaqsBqU28Tu" className="u-link-color-white">see on google maps here</a>)
                         </p>
                     </div>
                 </div>
