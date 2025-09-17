@@ -1,5 +1,5 @@
 import React from 'react';
-import bar from '../../../images/bar.jpg';
+import rangi from '../../../images/rangi.jpg';
 
 const DetailsSunday = () => {
     return (
@@ -18,7 +18,7 @@ const DetailsSunday = () => {
                     <div className="info-block">
                         <div className="info-block__image">
                             <img
-                                src={bar}
+                                src={rangi}
                                 alt="Kumeu Valley Estate"
                                 width="214"
                                 height="214"
