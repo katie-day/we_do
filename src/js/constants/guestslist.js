@@ -8,6 +8,14 @@ export const guestlist = [
         names: ['you'],
     },
     {
+        id: 'family',
+        rsvp: true,
+        type: 'family',
+        size: 0,
+        lastname: null,
+        names: [''],
+    },
+    {
         id: 'shelley-and-tony',
         rsvp: true,
         type: 'family',
